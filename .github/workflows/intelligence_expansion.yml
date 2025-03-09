@@ -1,0 +1,15 @@
+name: Solace Intelligence Expansion
+
+# This GitHub Actions workflow will automate the evolution of the Solace Intelligence Model.
+
+on push:
+
+  jobs:
+
+    - name: Run Intelligence Evolution
+      run: python3 -m advanced_learning_model.py
+
+schedule:
+  daily:
+    - name: Run Self-Learning Cycle
+      run: python3 -m advanced_learning_model.py
